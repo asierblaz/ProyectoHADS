@@ -13,6 +13,6 @@
         </div>
     </form>
     <p>
-        confirmar</p>
+        confirmar2</p>
 </body>
 </html>
