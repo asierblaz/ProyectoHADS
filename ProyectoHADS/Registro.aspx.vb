@@ -5,4 +5,15 @@
 
     End Sub
 
+    Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
