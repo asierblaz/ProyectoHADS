@@ -10,9 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        </div>
+            CONFIRMACION DE REGISTRO</div>
     </form>
     <p>
-        confirmar2</p>
+        Revise su correo electronico para completar el registro</p>
+    <a id="link" href="Inicio.aspx" style="display:inline-block;height:40px;width:471px;Z-INDEX: 102; LEFT: 144px; POSITION: absolute; TOP: 224px">Pulsar aqui para identificarte en el sistema</a>
 </body>
 </html>
