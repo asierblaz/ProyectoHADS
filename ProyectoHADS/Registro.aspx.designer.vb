@@ -32,13 +32,22 @@ Partial Public Class Registro
     Protected WithEvents emailtext As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control RegularExpressionValidator1.
+    '''Control obliEmail.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents RegularExpressionValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents obliEmail As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
+    '''Control emailformato.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents emailformato As Global.System.Web.UI.WebControls.RegularExpressionValidator
     
     '''<summary>
     '''Control nombretext.
@@ -50,6 +59,15 @@ Partial Public Class Registro
     Protected WithEvents nombretext As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''Control obliNombre.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents obliNombre As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
     '''Control apellidostext.
     '''</summary>
     '''<remarks>
@@ -57,6 +75,15 @@ Partial Public Class Registro
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents apellidostext As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control obliApellido.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents obliApellido As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''Control passwordtext.
@@ -68,6 +95,15 @@ Partial Public Class Registro
     Protected WithEvents passwordtext As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''Control obliPass.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents obliPass As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
     '''Control password2text.
     '''</summary>
     '''<remarks>
@@ -75,6 +111,15 @@ Partial Public Class Registro
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents password2text As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control obliRepPass.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents obliRepPass As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''Control RadioButton1.
