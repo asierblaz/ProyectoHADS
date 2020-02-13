@@ -49,7 +49,7 @@
 
             <div>
                 Rol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:RadioButton ID="RadioButton1" runat="server" Text="Alumno" GroupName="rol" />&nbsp;&nbsp;
+                <asp:RadioButton ID="RadioButton1" runat="server" Text="Alumno" GroupName="rol" Checked="True" />&nbsp;&nbsp;
                 <asp:RadioButton ID="RadioButton2" runat="server" Text="Profesor" GroupName="rol" />
                 <br />
                 <br />
