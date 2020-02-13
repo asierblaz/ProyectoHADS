@@ -24,13 +24,16 @@
 
 
 
-        ' Dim numAleatorio As New Random()
-        ' Dim valorAleatorio As Integer = numAleatorio.Next(10000, 99999)
+
+        Dim numAleatorio As New Random()
+        Dim valorAleatorio As Integer = numAleatorio.Next(10000, 99999)
+        Dim cod As String
+        cod = valorAleatorio.ToString()
 
         'EnviarMail.enviarEmail(emailtext.Text, valorAleatorio)
         ' MsgBox(valorAleatorio)
 
-        EnviarMail.enviarEmail(emailtext.Text)
+        EnviarMail.enviarEmail(emailtext.Text, cod, nombretext.Text)
 
 
 
