@@ -19,11 +19,14 @@
             </label>
             <asp:RegularExpressionValidator ID="validadorEmail" runat="server" ControlToValidate="emailLogin" ErrorMessage="No es un email válido" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             <br />
-            <label>Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label><asp:TextBox ID="passLogin" runat="server"></asp:TextBox>
+            <label>Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label><asp:TextBox ID="passLogin" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="validadorPass" runat="server" ErrorMessage="*" ControlToValidate="passLogin" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Button ID="botonLogin" runat="server" Text="Login" Height="36px" Width="158px" />
+            <br />
+            <br />
+            <asp:Label ID="LabelAviso" runat="server" ForeColor="Red"></asp:Label>
             <br />
             <br />
             <asp:HyperLink ID="linkRegistro" runat="server" NavigateUrl="~/Registro.aspx">Registrarse</asp:HyperLink>

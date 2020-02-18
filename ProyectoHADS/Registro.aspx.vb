@@ -46,6 +46,8 @@ Public Class Registro
         If (pass = password2text.Text) Then
             EnviarMail.enviarEmail(email, cod, nombre)
             labprueba.Text = insertar(email, nombre, apellidos, valorAleatorio, False, tipo, pass, 0)
+            EnviarMail.enviarEmail(email, cod, nombre)
+
         Else
             errorpass.Text = "Las constraseñas no coinciden"
 
