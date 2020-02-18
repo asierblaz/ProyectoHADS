@@ -104,6 +104,15 @@ Partial Public Class Registro
     Protected WithEvents obliPass As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
+    '''Control errorpass.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents errorpass As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control password2text.
     '''</summary>
     '''<remarks>

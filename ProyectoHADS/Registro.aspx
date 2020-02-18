@@ -38,6 +38,8 @@
                 <asp:TextBox ID="passwordtext" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="obliPass" runat="server" ControlToValidate="passwordtext" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 
+        <asp:Label ID="errorpass" runat="server" ForeColor="Red"></asp:Label>
+
             </div>
             <div>
                 Repita Passsword&nbsp; &nbsp;&nbsp;            

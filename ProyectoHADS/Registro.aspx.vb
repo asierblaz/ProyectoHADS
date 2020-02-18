@@ -31,10 +31,29 @@ Public Class Registro
         Dim cod As String
         cod = valorAleatorio.ToString()
 
-        EnviarMail.enviarEmail(emailtext.Text, cod, nombretext.Text)
+        Dim email, nombre, apellidos, tipo, pass As String
+        email = emailtext.Text
+        nombre = nombretext.Text
+        apellidos = apellidostext.Text
+        pass = passwordtext.Text
 
+        If RadioButton1.Checked Then
+            tipo = "Alumno"
+        Else
+            tipo = "Profesor"
+        End If
 
+        If (pass = password2text.Text) Then
+            EnviarMail.enviarEmail(email, cod, nombre)
+            labprueba.Text = insertar(email, nombre, apellidos, valorAleatorio, False, tipo, pass, 0)
+        Else
+            errorpass.Text = "Las constraseñas no coinciden"
+
+        End If
     End Sub
+
+
+
 
     Private Sub Registro_Unload(sender As Object, e As EventArgs) Handles Me.Unload
         cerrarconexion()
