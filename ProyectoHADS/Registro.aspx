@@ -54,6 +54,7 @@
                 <br />
                 <br />
             </div>
+        <br />
 
 
 
@@ -62,6 +63,12 @@
 
             &nbsp;
         <asp:Button ID="Button1" runat="server" Height="36px" Text="Registrarse" Width="188px" />
+        <asp:Button ID="Button2" runat="server" Text="insertar" />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="labprueba" runat="server" ForeColor="Red"></asp:Label>
+        <br />
         </p>
     </form>
 </body>

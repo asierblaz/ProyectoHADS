@@ -121,3 +121,6 @@ D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\obj\Debug\Proye
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\obj\Debug\ProyectoHADS.dll
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\obj\Debug\ProyectoHADS.xml
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\obj\Debug\ProyectoHADS.pdb
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\AccesoDatos.dll
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\AccesoDatos.pdb
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\AccesoDatos.xml
