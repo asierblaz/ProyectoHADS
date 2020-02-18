@@ -47,7 +47,12 @@ Public Class Registro
         nombre = nombretext.Text
         apellidos = apellidostext.Text
         pass = passwordtext.Text
-        tipo = "Alumno"
+        If RadioButton1.Checked Then
+            tipo = "Alumno"
+        Else
+            tipo = "Profesor"
+        End If
+
         If (pass = password2text.Text) Then
             labprueba.Text = insertar(email, nombre, apellidos, 1, False, tipo, pass, 0)
         Else
