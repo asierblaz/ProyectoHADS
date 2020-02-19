@@ -49,6 +49,9 @@
     <Reference Include="AccesoDatos">
       <HintPath>..\..\AccesoDatos\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
+    <Reference Include="EmailContrasena">
+      <HintPath>..\..\EmailContrasena\EmailContrasena\bin\Debug\EmailContrasena.dll</HintPath>
+    </Reference>
     <Reference Include="EnviarMail">
       <HintPath>..\..\EnviarMail\EnviarMail\bin\Debug\EnviarMail.dll</HintPath>
     </Reference>
@@ -100,6 +103,7 @@
   <ItemGroup>
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
+    <Content Include="FormCambioPass.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
@@ -118,6 +122,13 @@
     <Compile Include="Confirmar.aspx.vb">
       <DependentUpon>Confirmar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormCambioPass.aspx.designer.vb">
+      <DependentUpon>FormCambioPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormCambioPass.aspx.vb">
+      <DependentUpon>FormCambioPass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Inicio.aspx.designer.vb">
       <DependentUpon>Inicio.aspx</DependentUpon>

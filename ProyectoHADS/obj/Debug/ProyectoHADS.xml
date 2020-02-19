@@ -82,6 +82,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoHADS.CambiarPassword._LabelAviso">
+<summary>
+Control LabelAviso.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.CambiarPassword._Button1">
 <summary>
 Control Button1.
@@ -101,6 +110,60 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </remarks>
 </member>
 <member name="F:ProyectoHADS.Confirmar._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._passwordtext">
+<summary>
+Control passwordtext.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._pass2text">
+<summary>
+Control pass2text.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._errorpass">
+<summary>
+Control errorpass.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.FormCambioPass._Label1">
 <summary>
 Control Label1.
 </summary>

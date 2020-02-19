@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class CambiarPassword
+Partial Public Class FormCambioPass
     
     '''<summary>
     '''Control form1.
@@ -23,49 +23,22 @@ Partial Public Class CambiarPassword
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''Control Label1.
+    '''Control passwordtext.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents passwordtext As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control emailRestablecer.
+    '''Control pass2text.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents emailRestablecer As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control emailNoVacio.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents emailNoVacio As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
-    '''<summary>
-    '''Control validadorEmail.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents validadorEmail As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
-    '''<summary>
-    '''Control LabelAviso.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LabelAviso As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents pass2text As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control Button1.
@@ -75,4 +48,22 @@ Partial Public Class CambiarPassword
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''Control errorpass.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents errorpass As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 End Class
