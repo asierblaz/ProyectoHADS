@@ -11,9 +11,14 @@ Public Class Inicio
         Dim pass As String = passLogin.Text
 
         If (login(email, pass) = True) Then
-            LabelAviso.Text = "Bienvenido al sistema " + email
-        Else
+            LabelAviso.Text ="Bienvenido al sistema " + email
+            '  MsgBox("Bienvenido al sistema " + email)
+
+        ElseIf (emailExiste(email) = False) Then
             LabelAviso.Text = "El usuario no estra registrado en el sistema"
+
+        Else
+            LabelAviso.Text = "Los datos introducidos son incorrectos"
 
         End If
 
