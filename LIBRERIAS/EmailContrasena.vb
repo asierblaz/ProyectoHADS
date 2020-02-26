@@ -11,7 +11,7 @@ Public Class EmailContrasena
             'Direccion de destino
             Dim to_address As New MailAddress(email)
             'Password de la cuenta 
-            Dim from_pass As String = "Hads2020"
+            Dim from_pass As String = "****"
             'objeto para el cliente smtp
             Dim smtp As New SmtpClient
             'Host en este caso el servidor de outlook
