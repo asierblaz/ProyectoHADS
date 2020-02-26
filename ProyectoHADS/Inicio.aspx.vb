@@ -4,6 +4,7 @@ Public Class Inicio
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         conectar()
+
     End Sub
 
     Protected Sub botonLogin_Click(sender As Object, e As EventArgs) Handles botonLogin.Click
@@ -11,8 +12,8 @@ Public Class Inicio
         Dim pass As String = passLogin.Text
 
         If (login(email, pass) = True) Then
-            LabelAviso.Text ="Bienvenido al sistema " + email
-            '  MsgBox("Bienvenido al sistema " + email)
+            ' LabelAviso.Text ="Bienvenido al sistema " + email
+            MsgBox("Bienvenido al sistema " + email)
 
         ElseIf (emailExiste(email) = False) Then
             LabelAviso.Text = "El usuario no estra registrado en el sistema"
