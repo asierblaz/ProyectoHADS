@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            INICIO APLICACIÓN HADS<br />
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="INICIO APLICACIÓN HADS"></asp:Label>
             <label>
             <br />
             <br />
