@@ -37,6 +37,15 @@ ProyectoHADS
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
+<member name="F:ProyectoHADS.Alumno._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.CambiarPassword._form1">
 <summary>
 Control form1.
@@ -247,6 +256,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoHADS.Inicio._linkContraseña">
 <summary>
 Control linkContraseña.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Profesor._form1">
+<summary>
+Control form1.
 </summary>
 <remarks>
 Campo generado automáticamente.

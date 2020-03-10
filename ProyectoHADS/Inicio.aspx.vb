@@ -1,4 +1,5 @@
-﻿Imports AccesoDatos.accesodatosSQL
+﻿Imports System.Data.SqlClient
+Imports AccesoDatos.accesodatosSQL
 Public Class Inicio
     Inherits System.Web.UI.Page
 
@@ -10,11 +11,32 @@ Public Class Inicio
     Protected Sub botonLogin_Click(sender As Object, e As EventArgs) Handles botonLogin.Click
         Dim email As String = emailLogin.Text
         Dim pass As String = passLogin.Text
+        Dim tipo As String
+
+        Dim usuario As SqlDataReader
+
 
         If (login(email, pass) = True) Then
+            obtenerdatos(email)
             ' LabelAviso.Text ="Bienvenido al sistema " + email
-            MsgBox("Bienvenido al sistema " + email)
 
+            usuario = obtenerdatos(email)
+            usuario.Read()
+            tipo = usuario.Item("tipo")
+            Session("Rol") = tipo
+            Session("Email") = email
+            Session("Nombre") = usuario.Item("nombre")
+
+            If (tipo = "Alumno") Then
+                MsgBox("Bienvenido al sistema de gestion de Alumnos " + usuario.Item("nombre"))
+
+                Response.Redirect("Alumno.aspx")
+            Else
+                MsgBox("Bienvenido al sistema de gestion de Profesores " + usuario.Item("nombre"))
+
+                Response.Redirect("Profesor.aspx")
+
+            End If
         ElseIf (emailExiste(email) = False) Then
             LabelAviso.Text = "El usuario no estra registrado en el sistema"
 
