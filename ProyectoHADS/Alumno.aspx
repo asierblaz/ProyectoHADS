@@ -15,7 +15,7 @@
             margin: 0;
             padding: 0;
             width: 20%;
-            background-color: ##e1fae5;
+            background-color: #e1fae5;
             position: fixed;
             height: 100%;
         }
@@ -44,7 +44,12 @@
     <form id="form1" runat="server">
 
       <ul>
-          <li><a href='TareasAlumno.aspx' id="tareasGenericas">Tareas Genéricas</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><b><a href='TareasAlumno.aspx' id="tareasGenericas">Tareas Genéricas</a></b></li>
  
       </ul>
     
