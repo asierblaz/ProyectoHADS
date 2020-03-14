@@ -44,7 +44,12 @@
     <form id="form1" runat="server">
 
       <ul>
-          <li><a href='TareasProfesor.aspx' id="tareasGenericas">Tareas Genéricas</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><a href='TareasProfesor.aspx' id="tareasGenericas">Tareas Profesor</a></li>
  
       </ul>
     
@@ -57,12 +62,6 @@
             <asp:Button ID="ButtonCerrarSesion" runat="server" Font-Bold="True" ForeColor="Black" Height="31px" Text="Cerrar Sesión" Width="165px" />
          
         </div>
-        </br>
-        <div align="left">
-        
-           </div>
-        </br>
-        </br>
         <h1>Gestión Web de Tareas-Dedicación</h1>
         <h1>Profesores</h1>
      </div>

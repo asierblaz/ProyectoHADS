@@ -73,6 +73,168 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelCodigo">
+<summary>
+Control LabelCodigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._TextCodigo">
+<summary>
+Control TextCodigo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._RequiredFieldValidator1">
+<summary>
+Control RequiredFieldValidator1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelDescripcion">
+<summary>
+Control LabelDescripcion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._TextDescripcion">
+<summary>
+Control TextDescripcion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelAsignaturas">
+<summary>
+Control LabelAsignaturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._Asignaturas">
+<summary>
+Control Asignaturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelHorasEstimadas">
+<summary>
+Control LabelHorasEstimadas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._TextHorasEstimadas">
+<summary>
+Control TextHorasEstimadas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._RequiredFieldValidator3">
+<summary>
+Control RequiredFieldValidator3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._ValidadorHorasNúmero">
+<summary>
+Control ValidadorHorasNúmero.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelTipoTarea">
+<summary>
+Control LabelTipoTarea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._TipoTareas">
+<summary>
+Control TipoTareas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._BotonAñadir">
+<summary>
+Control BotonAñadir.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._LabelAviso">
+<summary>
+Control LabelAviso.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._HyperLink1">
+<summary>
+Control HyperLink1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._TiposTareas">
+<summary>
+Control TiposTareas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InsertarTarea._AsignaturasProf">
+<summary>
+Control AsignaturasProf.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.InstanciarTarea._form1">
 <summary>
 Control form1.
@@ -103,6 +265,132 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoHADS.InstanciarTarea._ButtonCerrarSesion">
 <summary>
 Control ButtonCerrarSesion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LabelUsuario">
+<summary>
+Control LabelUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._TextBoxUsuario">
+<summary>
+Control TextBoxUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LabelTarea">
+<summary>
+Control LabelTarea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._TextBoxTarea">
+<summary>
+Control TextBoxTarea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LabelHorasEst">
+<summary>
+Control LabelHorasEst.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._TextBoxHorasEst">
+<summary>
+Control TextBoxHorasEst.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LabelHorasReales">
+<summary>
+Control LabelHorasReales.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._TextBoxHorasReales">
+<summary>
+Control TextBoxHorasReales.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._ValidadorHorasVacias">
+<summary>
+Control ValidadorHorasVacias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._ValidadorHorasNúmero">
+<summary>
+Control ValidadorHorasNúmero.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._TablaTareas">
+<summary>
+Control TablaTareas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._BotonCrearTarea">
+<summary>
+Control BotonCrearTarea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LabelAviso">
+<summary>
+Control LabelAviso.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.InstanciarTarea._LinkAtras">
+<summary>
+Control LinkAtras.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -643,6 +931,51 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoHADS.TareasProfesor._ButtonCerrarSesion">
 <summary>
 Control ButtonCerrarSesion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.TareasProfesor._AsignaturasProfesor">
+<summary>
+Control AsignaturasProfesor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.TareasProfesor._BotonInsertarTarea">
+<summary>
+Control BotonInsertarTarea.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.TareasProfesor._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.TareasProfesor._TarProf">
+<summary>
+Control TarProf.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.TareasProfesor._AsigProf">
+<summary>
+Control AsigProf.
 </summary>
 <remarks>
 Campo generado automáticamente.

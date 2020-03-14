@@ -12,4 +12,9 @@
         Session("Nombre") = ""
         Response.Redirect("Inicio.aspx")
     End Sub
+
+    Protected Sub BotonInsertarTarea_Click(sender As Object, e As EventArgs) Handles BotonInsertarTarea.Click
+        Response.Redirect("InsertarTarea.aspx")
+
+    End Sub
 End Class

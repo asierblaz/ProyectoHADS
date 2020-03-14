@@ -32,8 +32,50 @@
             <asp:Button ID="ButtonCerrarSesion" runat="server" Font-Bold="True" ForeColor="Black" Height="31px" Text="Cerrar Sesión" Width="165px" />
          
         </div>
-        <h1 id="h1">Alumnos <br /> Instanciar Tareas Genérica</h1>
-        <p>&nbsp;</p>
+        <h1 id="h1">Alumnos <br /> Instanciar Tareas Genérica </h1>
+        <br />   
+        <p align="left" style="margin-left: 40px">
+
+            <asp:Label ID="LabelUsuario" runat="server" Text="Usuario"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBoxUsuario" runat="server" ReadOnly="True"></asp:TextBox>
+        </p>
+        <p align="left" style="margin-left: 40px">
+            <asp:Label ID="LabelTarea" runat="server" Text="Tarea"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <asp:TextBox ID="TextBoxTarea" runat="server" ReadOnly="True"></asp:TextBox>
+        </p>
+                <p align="left" style="margin-left: 40px">
+
+            <asp:Label ID="LabelHorasEst" runat="server" Text="Horas Est."></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBoxHorasEst" runat="server" ReadOnly="True"></asp:TextBox>
+        </p>
+               <p align="left" style="margin-left: 40px">
+
+            <asp:Label ID="LabelHorasReales" runat="server" Text="Horas Reales"></asp:Label>
+            &nbsp;
+            <asp:TextBox ID="TextBoxHorasReales" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="ValidadorHorasVacias" runat="server" ControlToValidate="TextBoxHorasReales" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="ValidadorHorasNúmero" runat="server" ControlToValidate="TextBoxHorasReales" ErrorMessage="Introduzca un número" ForeColor="Red" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
+        </p>
+            <asp:GridView ID="TablaTareas" runat="server">
+            </asp:GridView>
+            <p align="left" style="margin-left: 40px">
+
+            <asp:Button ID="BotonCrearTarea" runat="server" Text="Crear Tarea" Height="47px" Width="160px"/>
+        </p>
+          <div align="left" style="margin-left: 40px">
+
+        <asp:Label ID="LabelAviso" runat="server"></asp:Label>
+
+              <br />
+              <br />
+
+          </div>
+        <p>
+            <asp:HyperLink ID="LinkAtras" runat="server" NavigateUrl="~/TareasAlumno.aspx">Página anterior</asp:HyperLink>
+        </p>
      </div>
    
     </form>

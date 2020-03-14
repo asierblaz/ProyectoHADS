@@ -32,8 +32,52 @@
          
         </div>
         <h1 id="h1">Profesor <br /> Insertar Tarea</h1>
-        <p>&nbsp;</p>
      </div>
+        <p style="margin-left: 40px">
+            <asp:Label ID="LabelCodigo" runat="server" Text="Código"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextCodigo" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextCodigo" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p style="margin-left: 40px">
+            <asp:Label ID="LabelDescripcion" runat="server" Text="Descripción"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextDescripcion" runat="server" Height="63px" Width="753px"></asp:TextBox>
+        </p>
+        <p style="margin-left: 40px">
+            <asp:Label ID="LabelAsignaturas" runat="server" Text="Asignaturas"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="Asignaturas" runat="server" DataSourceID="AsignaturasProf" DataTextField="codigoasig" DataValueField="codigoasig">
+            </asp:DropDownList>
+        </p>
+        <p style="margin-left: 40px">
+            <asp:Label ID="LabelHorasEstimadas" runat="server" Text="Horas Estimadas"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextHorasEstimadas" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextHorasEstimadas" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="ValidadorHorasNúmero" runat="server" ControlToValidate="TextHorasEstimadas" ErrorMessage="Introduzca un número" ForeColor="Red" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
+        </p>
+        <p style="margin-left: 40px">
+            <asp:Label ID="LabelTipoTarea" runat="server" Text="Tipo Tarea"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="TipoTareas" runat="server" DataSourceID="TiposTareas" DataTextField="TipoTarea" DataValueField="TipoTarea">
+            </asp:DropDownList>
+        </p>
+        <div style="margin-left: 40px">
+            <asp:Button ID="BotonAñadir" runat="server" Height="42px" Text="Añadir tarea" Width="143px" />
+            <br />
+            <br />
+            <asp:Label ID="LabelAviso" runat="server"></asp:Label>
+        </div>
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/TareasProfesor.aspx">Ver Tareas</asp:HyperLink>
+        </p>
+        <asp:SqlDataSource ID="TiposTareas" runat="server" ConnectionString="<%$ ConnectionStrings:AmigosConnectionString %>" SelectCommand="SELECT DISTINCT [TipoTarea] FROM [TareasGenericas]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="AsignaturasProf" runat="server" ConnectionString="<%$ ConnectionStrings:AmigosConnectionString %>" SelectCommand="SELECT DISTINCT GruposClase.codigoasig FROM GruposClase INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo WHERE (ProfesoresGrupo.email = @email)">
+                <SelectParameters>
+                    <asp:SessionParameter Name="email" SessionField="Email" />
+                </SelectParameters>
+        </asp:SqlDataSource>
    
     </form>
 </body>
