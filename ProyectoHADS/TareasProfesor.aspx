@@ -35,10 +35,14 @@
         </br>
         <h1 id="h1">Profesor <br /> Gestión de tareas Genéricas</h1>
         <p>
-            <asp:DropDownList ID="AsignaturasProfesor" runat="server" AutoPostBack="True" DataSourceID="AsigProf" DataTextField="codigoasig" DataValueField="codigoasig">
+            <asp:DropDownList ID="AsignaturasProfesor" runat="server" AutoPostBack="True" DataSourceID="AsigProf" DataTextField="codigoasig" DataValueField="codigoasig" Height="39px" Width="124px">
             </asp:DropDownList>
-            <asp:Button ID="BotonInsertarTarea" runat="server" Text="Insertar Tarea" />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo" DataSourceID="TarProf" AllowSorting="True">
+            <asp:Button ID="BotonInsertarTarea" runat="server" Text="Insertar Tarea" Height="34px" Width="171px" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo" DataSourceID="TarProf" AllowSorting="True" BackColor="#E6E6E6">
                 <Columns>
                     <asp:CommandField ShowEditButton="True" />
                     <asp:BoundField DataField="Codigo" HeaderText="Codigo" ReadOnly="True" SortExpression="Codigo" />
