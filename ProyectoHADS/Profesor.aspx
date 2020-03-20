@@ -50,7 +50,9 @@
           <li></li>
           <li></li>
           <li><a href='TareasProfesor.aspx' id="tareasGenericas">Tareas Profesor</a></li>
- 
+          <li><a href='ImportarTareasXMLDocument.aspx' id="importarTareasXML">Importar XMLDocument</a></li>
+          <li></li>
+          <li><a href='ExportarTareas.aspx' id="exportarTareas">Exportar</a></li>
       </ul>
     
     <div align="center" style="height: 577px; width: 1207px; float:right; margin-left: 7px;" id="divRight">
