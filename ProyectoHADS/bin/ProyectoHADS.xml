@@ -73,27 +73,36 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoHADS.ExportarTareas._AsignaturasProfesor">
+<member name="F:ProyectoHADS.ExportarTareas._asignaturasProfe">
 <summary>
-Control AsignaturasProfesor.
+Control asignaturasProfe.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoHADS.ExportarTareas._BotonImportarTareas">
+<member name="F:ProyectoHADS.ExportarTareas._BotonExportarTareas">
 <summary>
-Control BotonImportarTareas.
+Control BotonExportarTareas.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoHADS.ExportarTareas._AsigProf">
+<member name="F:ProyectoHADS.ExportarTareas._mensaje">
 <summary>
-Control AsigProf.
+Control mensaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.ExportarTareas._TablaTareas">
+<summary>
+Control TablaTareas.
 </summary>
 <remarks>
 Campo generado automáticamente.

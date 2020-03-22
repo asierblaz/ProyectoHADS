@@ -50,29 +50,38 @@ Partial Public Class ExportarTareas
     Protected WithEvents ButtonCerrarSesion As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Control AsignaturasProfesor.
+    '''Control asignaturasProfe.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents AsignaturasProfesor As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents asignaturasProfe As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Control BotonImportarTareas.
+    '''Control BotonExportarTareas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BotonImportarTareas As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BotonExportarTareas As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Control AsigProf.
+    '''Control mensaje.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents AsigProf As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents mensaje As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control TablaTareas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TablaTareas As Global.System.Web.UI.WebControls.GridView
 End Class

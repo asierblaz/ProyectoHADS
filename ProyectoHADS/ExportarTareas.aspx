@@ -35,18 +35,16 @@
         </br>
         <h1 id="h1">Profesor <br /> Exportar Tareas Genéricas</h1>
         <p>
-            <asp:DropDownList ID="AsignaturasProfesor" runat="server" AutoPostBack="True" DataSourceID="AsigProf" DataTextField="codigoasig" DataValueField="codigoasig" Height="39px" Width="124px">
+            <asp:DropDownList ID="asignaturasProfe" runat="server" AutoPostBack="True" Height="39px" Width="124px">
             </asp:DropDownList>
-            <asp:Button ID="BotonImportarTareas" runat="server" Text="Importar (XMLD)" Height="34px" Width="171px" />
+            <asp:Button ID="BotonExportarTareas" runat="server" Text="Exportar (XML)" Height="34px" Width="171px" />
         </p>
         <p>
-            &nbsp;</p>
+            <asp:Label ID="mensaje" runat="server"></asp:Label>
+        </p>
         <p>
-            <asp:SqlDataSource ID="AsigProf" runat="server" ConnectionString="<%$ ConnectionStrings:AmigosConnectionString %>" SelectCommand="SELECT DISTINCT GruposClase.codigoasig FROM GruposClase INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo WHERE (ProfesoresGrupo.email = @email)">
-                <SelectParameters>
-                    <asp:SessionParameter Name="email" SessionField="Email" />
-                </SelectParameters>
-            </asp:SqlDataSource>
+            <asp:GridView ID="TablaTareas" runat="server">
+            </asp:GridView>
         </p>
      </div>
    
