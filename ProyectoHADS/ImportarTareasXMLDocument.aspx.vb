@@ -26,8 +26,10 @@ Public Class ImportarTareasXMLDocument
     End Sub
 
     Private Sub mostrarXML()
-        Xml1.DocumentSource = Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")
-        Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+        If My.Computer.FileSystem.FileExists(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
+            Xml1.DocumentSource = Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")
+            Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+        End If
     End Sub
 
     Private Sub cargarListaAsignaturas()
@@ -45,54 +47,67 @@ Public Class ImportarTareasXMLDocument
     End Sub
 
     Private Sub importarDocumentoXML()
-
-        Dim docXML As New XmlDocument
         Try
-            conectar()
-            docXML.Load(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml"))
+            If My.Computer.FileSystem.FileExists(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
+                conectar()
 
-            Dim conexion As SqlConnection
-            Dim dtpAsig As SqlDataAdapter
-            Dim dstAsig As DataSet
+                Dim docXML As New XmlDocument
+                docXML.Load(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml"))
 
-            conexion = New SqlConnection("Data Source=hads.database.windows.net;Initial Catalog=Amigos;Persist Security Info=True;User ID=vadillo@ehu.es@hads;Password=curso19-20")
-            dtpAsig = New SqlDataAdapter("SELECT * FROM TareasGenericas", conexion)
-            dstAsig = New DataSet
-            dtpAsig.Fill(dstAsig, "Tareas")
-            Dim tabla As DataTable = dstAsig.Tables("Tareas")
+                Dim conexion As SqlConnection
+                Dim dtpAsig As SqlDataAdapter
+                Dim dstAsig As DataSet
 
-            Dim tareas As XmlNodeList
-            tareas = docXML.GetElementsByTagName("tarea")
+                conexion = New SqlConnection("Data Source=hads.database.windows.net;Initial Catalog=Amigos;Persist Security Info=True;User ID=vadillo@ehu.es@hads;Password=curso19-20")
+                dtpAsig = New SqlDataAdapter("SELECT * FROM TareasGenericas", conexion)
+                dstAsig = New DataSet
+                dtpAsig.Fill(dstAsig, "Tareas")
+                Dim tabla As DataTable = dstAsig.Tables("Tareas")
 
-            Dim builderAsignaturas As New SqlCommandBuilder(dtpAsig)
+                Dim tareas As XmlNodeList
+                tareas = docXML.GetElementsByTagName("tarea")
 
-            Dim codigo As XmlNodeList = docXML.SelectNodes("/tareas/tarea/@codigo")
-            Dim desc As XmlNodeList = docXML.SelectNodes("/tareas/tarea/descripcion")
-            Dim hEstimadas As XmlNodeList = docXML.SelectNodes("/tareas/tarea/hestimadas")
-            Dim explotacion As XmlNodeList = docXML.SelectNodes("/tareas/tarea/explotacion")
-            Dim tipoTarea As XmlNodeList = docXML.SelectNodes("/tareas/tarea/tipotarea")
+                Dim builderAsignaturas As New SqlCommandBuilder(dtpAsig)
 
-            Dim i As Integer
-            For i = 0 To tareas.Count - 1
-                Dim row As DataRow = tabla.NewRow()
-                row("Codigo") = codigo(i).InnerText
-                row("Descripcion") = desc(i).InnerText
-                row("CodAsig") = asignaturasProfe.SelectedValue
-                row("HEstimadas") = hEstimadas(i).InnerText
-                row("Explotacion") = explotacion(i).InnerText
-                row("TipoTarea") = tipoTarea(i).InnerText
-                tabla.Rows.Add(row)
-            Next
+                Dim codigo As XmlNodeList = docXML.SelectNodes("/tareas/tarea/@codigo")
+                Dim desc As XmlNodeList = docXML.SelectNodes("/tareas/tarea/descripcion")
+                Dim hEstimadas As XmlNodeList = docXML.SelectNodes("/tareas/tarea/hestimadas")
+                Dim explotacion As XmlNodeList = docXML.SelectNodes("/tareas/tarea/explotacion")
+                Dim tipoTarea As XmlNodeList = docXML.SelectNodes("/tareas/tarea/tipotarea")
 
-            dtpAsig.Update(dstAsig, "Tareas")
-            dstAsig.AcceptChanges()
-            MensajeRespuesta.Text = "Las tareas se han añadido correctamente."
-            MensajeRespuesta.ForeColor = Drawing.Color.Green
-            cerrarconexion()
+                Dim i As Integer
+                For i = 0 To tareas.Count - 1
+                    Dim row As DataRow = tabla.NewRow()
+                    row("Codigo") = codigo(i).InnerText
+                    row("Descripcion") = desc(i).InnerText
+                    row("CodAsig") = asignaturasProfe.SelectedValue
+                    row("HEstimadas") = hEstimadas(i).InnerText
+                    row("Explotacion") = explotacion(i).InnerText
+                    row("TipoTarea") = tipoTarea(i).InnerText
+                    tabla.Rows.Add(row)
+                Next
+
+                dtpAsig.Update(dstAsig, "Tareas")
+                dstAsig.AcceptChanges()
+                MensajeRespuesta.Text = "Las tareas se han añadido correctamente."
+                MensajeRespuesta.ForeColor = Drawing.Color.Green
+                cerrarconexion()
+            Else
+                MensajeRespuesta.Text = "No existe el archivo XML a cargar."
+                MensajeRespuesta.ForeColor = Drawing.Color.Red
+            End If
+
         Catch ex As Exception
             MensajeRespuesta.Text = "Hay tareas repetidas."
             MensajeRespuesta.ForeColor = Drawing.Color.Red
         End Try
         mostrarXML()
+    End Sub
+
+    Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
+        Session("Rol") = ""
+        Session("Email") = ""
+        Session("Nombre") = ""
+        Response.Redirect("Inicio.aspx")
     End Sub
 End Class
