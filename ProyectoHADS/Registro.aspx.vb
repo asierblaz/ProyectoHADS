@@ -1,4 +1,8 @@
-﻿Imports AccesoDatos.accesodatosSQL
+﻿Imports System.Security.Cryptography
+Imports AccesoDatos.accesodatosSQL
+Imports Security.Security
+
+
 
 Public Class Registro
     Inherits System.Web.UI.Page
@@ -40,7 +44,9 @@ Public Class Registro
         End If
 
         If (pass = password2text.Text) Then
-            labprueba.Text = insertar(email, nombre, apellidos, valorAleatorio, False, tipo, pass, 0)
+            Dim md5Hash As MD5 = MD5.Create()
+            Dim passHash As String = getMd5Hash(md5Hash, pass)
+            labprueba.Text = insertar(email, nombre, apellidos, valorAleatorio, False, tipo, passHash, 0)
             EnviarMail.enviarEmail(email, cod, nombre)
 
         Else
@@ -48,7 +54,6 @@ Public Class Registro
 
         End If
     End Sub
-
 
 
 

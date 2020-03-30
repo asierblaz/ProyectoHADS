@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Security.Cryptography
 Imports AccesoDatos.accesodatosSQL
+Imports Security.Security
 Public Class Inicio
     Inherits System.Web.UI.Page
 
@@ -15,8 +17,9 @@ Public Class Inicio
 
         Dim usuario As SqlDataReader
 
-
-        If (login(email, pass) = True) Then
+        Dim md5Hash As MD5 = MD5.Create()
+        Dim passHash As String = getMd5Hash(md5Hash, pass)
+        If (login(email, passHash) = True) Then
             obtenerdatos(email)
             ' LabelAviso.Text ="Bienvenido al sistema " + email
 

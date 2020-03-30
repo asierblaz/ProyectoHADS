@@ -1,4 +1,6 @@
-﻿Imports AccesoDatos.accesodatosSQL
+﻿Imports System.Security.Cryptography
+Imports AccesoDatos.accesodatosSQL
+Imports Security.Security
 
 Public Class FormCambioPass
     Inherits System.Web.UI.Page
@@ -18,7 +20,9 @@ Public Class FormCambioPass
 
         Dim pass As String = passwordtext.Text
         If (pass = pass2text.Text) Then
-            Label1.Text = modificarContrasena(email, codint, pass)
+            Dim md5Hash As MD5 = MD5.Create()
+            Dim passHash As String = getMd5Hash(md5Hash, pass)
+            Label1.Text = modificarContrasena(email, codint, passHash)
         Else
             errorpass.Text = "Las constraseñas no coinciden"
         End If

@@ -79,4 +79,11 @@ Public Class ExportarTareas
         TablaTareas.DataBind()
         Session("dataset") = dstTareas
     End Sub
+
+    Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
+        Session("Rol") = ""
+        Session("Email") = ""
+        Session("Nombre") = ""
+        Response.Redirect("Inicio.aspx")
+    End Sub
 End Class

@@ -127,3 +127,6 @@ D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\AccesoDatos
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\EmailContrasena.dll
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\EmailContrasena.pdb
 D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\EmailContrasena.xml
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\Security.dll
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\Security.pdb
+D:\Informatika\Curso\HADS\LABORATORIOS\ProyectoHADS\ProyectoHADS\bin\Security.xml

@@ -55,6 +55,9 @@
     <Reference Include="EnviarMail">
       <HintPath>..\..\EnviarMail\EnviarMail\bin\Debug\EnviarMail.dll</HintPath>
     </Reference>
+    <Reference Include="Security">
+      <HintPath>..\..\Security\Security\obj\Debug\Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -104,6 +107,7 @@
     <Content Include="App_Data\EDA1.xml" />
     <Content Include="App_Data\HAS.xml" />
     <Content Include="App_Data\SEG.xml" />
+    <Content Include="App_Data\SW.xml" />
     <Content Include="App_Data\XSLTFile.xsl" />
     <Content Include="ExportarTareas.aspx" />
     <Content Include="ImportarTareasXMLDocument.aspx" />
