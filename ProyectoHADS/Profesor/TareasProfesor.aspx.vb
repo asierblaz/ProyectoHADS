@@ -1,4 +1,4 @@
-﻿Public Class Alumno
+﻿Public Class TareasProfesor
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -10,7 +10,12 @@
         Session("Rol") = ""
         Session("Email") = ""
         Session("Nombre") = ""
-        Response.Redirect("Inicio.aspx")
+        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../Inicio.aspx")
 
+    End Sub
+
+    Protected Sub BotonInsertarTarea_Click(sender As Object, e As EventArgs) Handles BotonInsertarTarea.Click
+        Response.Redirect("InsertarTarea.aspx")
     End Sub
 End Class

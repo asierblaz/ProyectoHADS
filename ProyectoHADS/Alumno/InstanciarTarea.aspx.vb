@@ -18,7 +18,9 @@ Public Class InstanciarTarea
         Session("Rol") = ""
         Session("Email") = ""
         Session("Nombre") = ""
-        Response.Redirect("Inicio.aspx")
+        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../Inicio.aspx")
+
     End Sub
 
     Protected Sub BotonCrearTarea_Click(sender As Object, e As EventArgs) Handles BotonCrearTarea.Click

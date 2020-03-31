@@ -32,13 +32,18 @@ Public Class Inicio
 
             If (tipo = "Alumno") Then
                 MsgBox("Bienvenido al sistema de gestion de Alumnos " + usuario.Item("nombre"))
-
-                Response.Redirect("Alumno.aspx")
-            Else
+                System.Web.Security.FormsAuthentication.SetAuthCookie("alumno", False)
+                Response.Redirect("Alumno/Alumno.aspx")
+            ElseIf (email = "vadillo@ehu.es") Then
+                System.Web.Security.FormsAuthentication.SetAuthCookie("vadillo@ehu.es", False)
+                Response.Redirect("Profesor/Profesor.aspx")
+            ElseIf (email = "admin@ehu.es") Then
+                System.Web.Security.FormsAuthentication.SetAuthCookie("admin", False)
+                Response.Redirect("Admin/Administracion.aspx")
+            ElseIf (tipo = "Profesor") Then
                 MsgBox("Bienvenido al sistema de gestion de Profesores " + usuario.Item("nombre"))
-
-                Response.Redirect("Profesor.aspx")
-
+                System.Web.Security.FormsAuthentication.SetAuthCookie("profesor", False)
+                Response.Redirect("Profesor/Profesor.aspx")
             End If
         ElseIf (emailExiste(email) = False) Then
             LabelAviso.Text = "El usuario no estra registrado en el sistema"
@@ -47,7 +52,6 @@ Public Class Inicio
             LabelAviso.Text = "Los datos introducidos son incorrectos"
 
         End If
-
     End Sub
 
     Private Sub botonLogin_Load(sender As Object, e As EventArgs) Handles botonLogin.Load

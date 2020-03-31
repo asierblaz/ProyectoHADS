@@ -84,6 +84,8 @@ Public Class ExportarTareas
         Session("Rol") = ""
         Session("Email") = ""
         Session("Nombre") = ""
-        Response.Redirect("Inicio.aspx")
+        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../Inicio.aspx")
+
     End Sub
 End Class

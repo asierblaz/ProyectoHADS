@@ -18,7 +18,9 @@ Public Class TareasAlumno
         Session("Rol") = ""
         Session("Email") = ""
         Session("Nombre") = ""
-        Response.Redirect("Inicio.aspx")
+        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../Inicio.aspx")
+
     End Sub
 
     Protected Sub ListAsignaturas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListAsignaturas.SelectedIndexChanged

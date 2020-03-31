@@ -12,7 +12,9 @@ Public Class InsertarTarea
         Session("Rol") = ""
         Session("Email") = ""
         Session("Nombre") = ""
-        Response.Redirect("Inicio.aspx")
+        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../Inicio.aspx")
+
     End Sub
 
     Protected Sub BotonAñadir_Click(sender As Object, e As EventArgs) Handles BotonAñadir.Click
