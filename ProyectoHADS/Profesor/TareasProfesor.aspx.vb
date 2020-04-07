@@ -15,8 +15,6 @@
     End Sub
 
     Protected Sub AsignaturasProfesor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles AsignaturasProfesor.SelectedIndexChanged
-        labelCargando.Text = "Cargando tareas..."
-        Threading.Thread.Sleep(3000)
-        labelCargando.Text = ""
+        Threading.Thread.Sleep(2000)
     End Sub
 End Class

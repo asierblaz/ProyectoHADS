@@ -39,10 +39,11 @@
             </asp:ScriptManager>
         </p>
         <p>
-                <asp:Label ID="labelCargando" runat="server">Cargando tareas...</asp:Label>
-                </p>
+                &nbsp;</p>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
+                <asp:Label ID="labelCargando" runat="server"></asp:Label>
+                <br />
                 <br />
                 <asp:DropDownList ID="AsignaturasProfesor" runat="server" AutoPostBack="True" DataSourceID="AsigProf" DataTextField="codigoasig" DataValueField="codigoasig" Height="39px" Width="124px">
                

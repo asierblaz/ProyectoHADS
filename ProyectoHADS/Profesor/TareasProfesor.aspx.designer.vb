@@ -59,15 +59,6 @@ Partial Public Class TareasProfesor
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
     
     '''<summary>
-    '''Control labelCargando.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents labelCargando As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
     '''Control UpdatePanel1.
     '''</summary>
     '''<remarks>
@@ -75,6 +66,15 @@ Partial Public Class TareasProfesor
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
+    
+    '''<summary>
+    '''Control labelCargando.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents labelCargando As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control AsignaturasProfesor.
