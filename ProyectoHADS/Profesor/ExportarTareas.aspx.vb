@@ -19,7 +19,7 @@ Public Class ExportarTareas
         Try
             Dim settings As XmlWriterSettings = New XmlWriterSettings()
             settings.Indent = True
-            Using writer As XmlWriter = XmlWriter.Create(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml"), settings)
+            Using writer As XmlWriter = XmlWriter.Create(Server.MapPath("../App_Data/" & asignaturasProfe.SelectedValue & ".xml"), settings)
                 writer.WriteStartDocument()
                 writer.WriteStartElement("tareas")
                 Dim datosTareas = Session("dataset").Tables("Tareas")
@@ -81,11 +81,6 @@ Public Class ExportarTareas
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
-        Session("Rol") = ""
-        Session("Email") = ""
-        Session("Nombre") = ""
-        System.Web.Security.FormsAuthentication.SignOut()
-        Response.Redirect("../Inicio.aspx")
-
+        Response.Redirect("../CerrarSesion.aspx")
     End Sub
 End Class

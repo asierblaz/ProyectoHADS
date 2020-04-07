@@ -26,9 +26,9 @@ Public Class ImportarTareasXMLDocument
     End Sub
 
     Private Sub mostrarXML()
-        If My.Computer.FileSystem.FileExists(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
-            Xml1.DocumentSource = Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")
-            Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+        If My.Computer.FileSystem.FileExists(Server.MapPath("../App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
+            Xml1.DocumentSource = Server.MapPath("../App_Data/" & asignaturasProfe.SelectedValue & ".xml")
+            Xml1.TransformSource = Server.MapPath("../App_Data/XSLTFile.xsl")
         End If
     End Sub
 
@@ -48,11 +48,11 @@ Public Class ImportarTareasXMLDocument
 
     Private Sub importarDocumentoXML()
         Try
-            If My.Computer.FileSystem.FileExists(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
+            If My.Computer.FileSystem.FileExists(Server.MapPath("../App_Data/" & asignaturasProfe.SelectedValue & ".xml")) Then
                 conectar()
 
                 Dim docXML As New XmlDocument
-                docXML.Load(Server.MapPath("App_Data/" & asignaturasProfe.SelectedValue & ".xml"))
+                docXML.Load(Server.MapPath("../App_Data/" & asignaturasProfe.SelectedValue & ".xml"))
 
                 Dim conexion As SqlConnection
                 Dim dtpAsig As SqlDataAdapter
@@ -105,11 +105,6 @@ Public Class ImportarTareasXMLDocument
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
-        Session("Rol") = ""
-        Session("Email") = ""
-        Session("Nombre") = ""
-        System.Web.Security.FormsAuthentication.SignOut()
-        Response.Redirect("../Inicio.aspx")
-
+        Response.Redirect("../CerrarSesion.aspx")
     End Sub
 End Class

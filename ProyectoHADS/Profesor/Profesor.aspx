@@ -66,6 +66,26 @@
         </div>
         <h1>Gestión Web de Tareas-Dedicación</h1>
         <h1>Profesores</h1>
+        <p>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /><asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <b>
+                <asp:Label ID="textoConectados" runat="server"></asp:Label>
+                <asp:Timer ID="Timer1" runat="server" Interval="4000">
+                </asp:Timer>
+                <asp:ListBox ID="alumnosC" runat="server"></asp:ListBox>
+                <asp:ListBox ID="profesoresC" runat="server"></asp:ListBox>
+                </b>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+   </p>
      </div>
    
     </form>

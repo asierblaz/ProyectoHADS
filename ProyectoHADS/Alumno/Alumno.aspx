@@ -66,10 +66,36 @@
         <div align="left">
         
            </div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
         </br>
         </br>
         <h1>Gestión Web de Tareas-Dedicación</h1>
-        <h1>Alumnos</h1>
+        <h1>Alumno</h1>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        <p>
+            &nbsp;</p>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <b>
+                <asp:Label ID="textoConectados" runat="server"></asp:Label>
+                <asp:Timer ID="Timer1" runat="server" Interval="4000">
+                </asp:Timer>
+                <asp:ListBox ID="alumnosC" runat="server"></asp:ListBox>
+                <asp:ListBox ID="profesoresC" runat="server"></asp:ListBox>
+                </b>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <p>
+            &nbsp;</p>
      </div>
    
     </form>

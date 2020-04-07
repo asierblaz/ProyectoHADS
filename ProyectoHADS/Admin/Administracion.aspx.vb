@@ -6,10 +6,6 @@
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
-        Session("Rol") = ""
-        Session("Email") = ""
-        Session("Nombre") = ""
-        Response.Redirect("../Inicio.aspx")
-        System.Web.Security.FormsAuthentication.SignOut()
+        Response.Redirect("../CerrarSesion.aspx")
     End Sub
 End Class

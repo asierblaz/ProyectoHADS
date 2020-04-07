@@ -15,12 +15,7 @@ Public Class TareasAlumno
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
-        Session("Rol") = ""
-        Session("Email") = ""
-        Session("Nombre") = ""
-        System.Web.Security.FormsAuthentication.SignOut()
-        Response.Redirect("../Inicio.aspx")
-
+        Response.Redirect("../CerrarSesion.aspx")
     End Sub
 
     Protected Sub ListAsignaturas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListAsignaturas.SelectedIndexChanged

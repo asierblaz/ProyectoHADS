@@ -11,18 +11,6 @@ Public Class Registro
         conectar()
     End Sub
 
-    Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Protected Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
         Dim EnviarMail As New EnviarMail.EnviarMail
 

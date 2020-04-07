@@ -110,6 +110,8 @@
     <Content Include="App_Data\SEG.xml" />
     <Content Include="App_Data\SW.xml" />
     <Content Include="App_Data\XSLTFile.xsl" />
+    <Content Include="CerrarSesion.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Profesor\ExportarTareas.aspx" />
     <Content Include="Profesor\ImportarTareasXMLDocument.aspx" />
     <Content Include="Profesor\InsertarTarea.aspx" />
@@ -132,6 +134,16 @@
     <Compile Include="Admin\Administracion.aspx.vb">
       <DependentUpon>Administracion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.designer.vb">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.vb">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Profesor\ExportarTareas.aspx.designer.vb">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>

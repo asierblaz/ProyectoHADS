@@ -7,15 +7,16 @@
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click
-        Session("Rol") = ""
-        Session("Email") = ""
-        Session("Nombre") = ""
-        System.Web.Security.FormsAuthentication.SignOut()
-        Response.Redirect("../Inicio.aspx")
-
+        Response.Redirect("../CerrarSesion.aspx")
     End Sub
 
     Protected Sub BotonInsertarTarea_Click(sender As Object, e As EventArgs) Handles BotonInsertarTarea.Click
         Response.Redirect("InsertarTarea.aspx")
+    End Sub
+
+    Protected Sub AsignaturasProfesor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles AsignaturasProfesor.SelectedIndexChanged
+        labelCargando.Text = "Cargando tareas..."
+        Threading.Thread.Sleep(3000)
+        labelCargando.Text = ""
     End Sub
 End Class
