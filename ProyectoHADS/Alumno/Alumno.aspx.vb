@@ -38,4 +38,8 @@
         End If
         textoConectados.Text = "Hay un total de " + alumnosConectados.ToString + " alumnos y " + profesoresConectados.ToString + " profesores online."
     End Sub
+
+    Protected Sub alumnosC_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

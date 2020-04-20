@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Profesor
+Partial Public Class Coordinador
     
     '''<summary>
     '''Control form1.
@@ -59,15 +59,6 @@ Partial Public Class Profesor
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
     
     '''<summary>
-    '''Control coordinador.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents coordinador As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
     '''Control UpdatePanel1.
     '''</summary>
     '''<remarks>
@@ -77,38 +68,38 @@ Partial Public Class Profesor
     Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
     
     '''<summary>
-    '''Control textoConectados.
+    '''Control dropAsignaturas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents textoConectados As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents dropAsignaturas As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Control Timer1.
+    '''Control Label2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Timer1 As Global.System.Web.UI.Timer
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control alumnosC.
+    '''Control horasMediaLabel.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents alumnosC As Global.System.Web.UI.WebControls.ListBox
+    Protected WithEvents horasMediaLabel As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control profesoresC.
+    '''Control Asignaturas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents profesoresC As Global.System.Web.UI.WebControls.ListBox
+    Protected WithEvents Asignaturas As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

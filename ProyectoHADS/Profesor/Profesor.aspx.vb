@@ -5,6 +5,9 @@
         Label1.Text = Session("Nombre")
         LabelConectado.Text = Session("Email")
         cargarAjax()
+        If (Session("Email") = "vadillo@ehu.es") Then
+            coordinador.Visible = True
+        End If
     End Sub
 
     Protected Sub ButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles ButtonCerrarSesion.Click

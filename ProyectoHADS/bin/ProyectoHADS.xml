@@ -82,6 +82,96 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoHADS.Coordinador._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._LabelConectado">
+<summary>
+Control LabelConectado.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._ButtonCerrarSesion">
+<summary>
+Control ButtonCerrarSesion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._dropAsignaturas">
+<summary>
+Control dropAsignaturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._horasMediaLabel">
+<summary>
+Control horasMediaLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Coordinador._Asignaturas">
+<summary>
+Control Asignaturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.ExportarTareas._form1">
 <summary>
 Control form1.
@@ -631,6 +721,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoHADS.Profesor._coordinador">
+<summary>
+Control coordinador.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.Profesor._UpdatePanel1">
 <summary>
 Control UpdatePanel1.
@@ -1000,6 +1099,24 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoHADS.Registro._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Registro._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoHADS.Registro._emailtext">
 <summary>
 Control emailtext.
@@ -1021,6 +1138,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ProyectoHADS.Registro._emailformato">
 <summary>
 Control emailformato.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoHADS.Registro._labelCorreo">
+<summary>
+Control labelCorreo.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1305,6 +1431,36 @@ Control AsigProf.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member>
+<member name="T:ProyectoHADS.Matricula.Matriculas">
+<remarks/>
+</member>
+<member name="M:ProyectoHADS.Matricula.Matriculas.#ctor">
+<remarks/>
+</member>
+<member name="E:ProyectoHADS.Matricula.Matriculas.comprobarCompleted">
+<remarks/>
+</member>
+<member name="M:ProyectoHADS.Matricula.Matriculas.comprobar(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoHADS.Matricula.Matriculas.comprobarAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:ProyectoHADS.Matricula.Matriculas.comprobarAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:ProyectoHADS.Matricula.Matriculas.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:ProyectoHADS.Matricula.comprobarCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ProyectoHADS.Matricula.comprobarCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ProyectoHADS.Matricula.comprobarCompletedEventArgs.Result">
+<remarks/>
 </member>
 </members>
 </doc>

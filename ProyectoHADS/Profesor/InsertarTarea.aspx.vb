@@ -1,7 +1,6 @@
 ﻿Imports AccesoDatos.accesodatosSQL
 Public Class InsertarTarea
     Inherits System.Web.UI.Page
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         conectar()
         Label1.Text = Session("Nombre")

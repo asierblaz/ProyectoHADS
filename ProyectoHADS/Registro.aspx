@@ -12,16 +12,23 @@
         <div>
             <t1>
             REGISTRAR USUARIO </t1>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
         </div>
         <p>
-            <div>
-                Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="emailtext" runat="server"></asp:TextBox>
-                
+   
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <div style="margin-top: 0px">
+                                Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:TextBox ID="emailtext" runat="server" OnTextChanged="emailtext_TextChanged"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="obliEmail" runat="server" ControlToValidate="emailtext" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-
-                <asp:RegularExpressionValidator ID="emailformato" runat="server" ErrorMessage="El formato de email no es valido" ForeColor="Red" ControlToValidate="emailtext" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-            </div>
+                                <asp:RegularExpressionValidator ID="emailformato" runat="server" ControlToValidate="emailtext" ErrorMessage="El formato de email no es valido" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                <asp:Label ID="labelCorreo" runat="server"></asp:Label>
+                            </div>
+                        </ContentTemplate>
+        </asp:UpdatePanel>
+                
             <div>
                 Nombre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="nombretext" runat="server"></asp:TextBox>
             
@@ -42,12 +49,12 @@
 
             </div>
             <div>
-                Repita Passsword&nbsp; &nbsp;&nbsp;            
+                Repita Passsword&nbsp; &nbsp;&nbsp;           
                 <asp:TextBox ID="password2text" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="obliRepPass" runat="server" ControlToValidate="password2text" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 
             </div>
-            <br />
+            <br /> 
 
             <div>
                 Rol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,7 +64,6 @@
                 <br />
             </div>
         <br />
-
 
 
 

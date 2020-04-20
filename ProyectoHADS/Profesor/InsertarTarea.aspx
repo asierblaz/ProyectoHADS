@@ -19,9 +19,6 @@
 </head>
 <body style="height: 720px">
     <form id="form1" runat="server">
-
-      
-    
     <div align="center" id="divRight">
         <div align="right" style="height: 33px">
          
@@ -78,7 +75,6 @@
                     <asp:SessionParameter Name="email" SessionField="Email" />
                 </SelectParameters>
         </asp:SqlDataSource>
-   
     </form>
 </body>
 </html>

@@ -70,6 +70,7 @@
             <asp:ScriptManager ID="ScriptManager1" runat="server">
             </asp:ScriptManager>
             <br />
+            <asp:HyperLink ID="coordinador" runat="server" NavigateUrl="~/Coordinador.aspx" Visible="False">Coordinador</asp:HyperLink>
             <br />
             <br />
             <br />
