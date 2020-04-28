@@ -11,7 +11,7 @@
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles dropAsignaturas.SelectedIndexChanged
-        Dim fun As New HorasMedia
+        Dim fun As New ServicioWeb.HorasMedia
         horasMediaLabel.Text = fun.calcularHoras(dropAsignaturas.SelectedValue)
     End Sub
 End Class
